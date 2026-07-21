@@ -17,6 +17,24 @@ const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://hardikmathur11:Mongowi
 app.use(cors());
 app.use(express.json());
 
+// Connect Database Helper for Serverless & Express
+let isConnected = false;
+async function connectDB() {
+  if (isConnected && mongoose.connection.readyState === 1) return;
+  try {
+    await mongoose.connect(MONGO_URI);
+    isConnected = true;
+    console.log('✅ Connected to MongoDB Atlas successfully!');
+  } catch (err) {
+    console.error('❌ MongoDB Connection Error:', err);
+  }
+}
+
+app.use(async (req: Request, res: Response, next) => {
+  await connectDB();
+  next();
+});
+
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
@@ -32,28 +50,23 @@ app.get('/api/health', (req: Request, res: Response) => {
   });
 });
 
-function startServer(portToUse: number) {
-  const server = app.listen(portToUse, () => {
-    console.log(`🚀 Adraya Backend Server running on http://localhost:${portToUse}`);
+if (process.env.NODE_ENV !== 'production' && !process.env.VERCEL) {
+  connectDB().then(() => {
+    const server = app.listen(PORT, () => {
+      console.log(`🚀 Adraya Backend Server running on http://localhost:${PORT}`);
+    });
+    server.on('error', (err: any) => {
+      if (err.code === 'EADDRINUSE') {
+        startServer(PORT + 1);
+      }
+    });
   });
 
-  server.on('error', (err: any) => {
-    if (err.code === 'EADDRINUSE') {
-      console.warn(`⚠️ Port ${portToUse} is already in use. Retrying on port ${portToUse + 1}...`);
-      startServer(portToUse + 1);
-    } else {
-      console.error('❌ Server error:', err);
-    }
-  });
+  function startServer(portToUse: number) {
+    const server = app.listen(portToUse, () => {
+      console.log(`🚀 Adraya Backend Server running on http://localhost:${portToUse}`);
+    });
+  }
 }
 
-// Connect Database & Start Server
-mongoose
-  .connect(MONGO_URI)
-  .then(() => {
-    console.log('✅ Connected to MongoDB Atlas successfully!');
-    startServer(PORT);
-  })
-  .catch((err) => {
-    console.error('❌ MongoDB Connection Error:', err);
-  });
+export default app;
