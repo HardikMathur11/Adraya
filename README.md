@@ -17,11 +17,11 @@
 
 ---
 
-## 🔗 Live Prototype Links
+## 🔗 Production Links
 
 - **🌐 GitHub Repository**: [https://github.com/HardikMathur11/Adraya](https://github.com/HardikMathur11/Adraya)
-- **🚀 Live Storefront Prototype**: [https://adraya.vercel.app](https://adraya.vercel.app) *(Deploying on Vercel)*
-- **⚙️ Live Backend API Service**: `http://localhost:5001` / `https://adraya-api.onrender.com`
+- **🚀 Live Backend Server (Vercel)**: [https://adraya-phc4.vercel.app/api/health](https://adraya-phc4.vercel.app/api/health)
+- **🛍️ Live Storefront Prototype**: [https://adraya.vercel.app](https://adraya.vercel.app)
 
 ---
 
@@ -30,6 +30,43 @@
 **Adraya** is an end-to-end direct-from-loom luxury handloom platform designed to preserve and scale India’s living textile heritage. By directly connecting rural master weavers (*Shilp Guru and National Award recipients*) with global textile connoisseurs and commercial luxury buyers, Adraya eliminates exploitative middleman networks, ensuring **82%+ direct bank payouts** to weaving families.
 
 Built with a high-performance **React + Vite 5** frontend, **Three.js 3D WebGL rendering**, **Node.js Express backend**, **MongoDB Atlas**, and an integrated **xAI Grok Intelligence Service**, Adraya combines luxury aesthetic craftsmanship with modern digital commerce engineering.
+
+---
+
+## 💎 Features Section
+
+### 1. 🧵 Interactive 3D Gold Thread Spool
+- **How it works**: Embedded in the homepage hero header using WebGL via `@react-three/fiber` and `@react-three/drei`.
+- **Purpose**: A floating, interactive 3D pure gold thread ring reacts to user mouse drags and spins organically over a live video broadcast stream of rural artisan weavers operating pit looms.
+- **Aesthetic**: Blends modern 3D technology with ancient craft, establishing an immediate luxury digital atmosphere.
+
+### 2. 🔍 High-Resolution 4-Photo Drape Inspector
+- **How it works**: Features a specialized photo carousel grid on the product details page showing close-ups of the pure zari borders, heavy thread density, macro silk fibers, and full saree length.
+- **Purpose**: Mimics the physical touch and feel of luxury textiles, giving buyers the confidence to inspect hand-spun organic mulberry silks from their screens.
+
+### 3. 👚 AI Virtual Try-On
+- **How it works**: Accessible via the **"AI Try-on Saree"** button on the product details page.
+- **Purpose**: Connoisseurs can upload personal portraits, and the platform’s layout simulates a realistic visualization of the handloom drape wrapped around them.
+
+### 4. 🕶️ 3D WebAR Loom Room Placement
+- **How it works**: Built using AR Quick Look (iOS) and Model Viewer (Android).
+- **Purpose**: Clicking **"View Loom in 3D AR"** projects a life-sized, high-fidelity 3D virtual pit loom weaving machine directly onto the user's living room floor using mobile camera augmented reality.
+
+### 5. 🤖 24/7 Grok AI Heritage Guide
+- **How it works**: Floating AI Chatbot widget present across all pages connected to xAI's `grok-beta` engine.
+- **Purpose**: Automatically educates global buyers on the Geographical Indication (GI) origin, the historical motifs of the drape, silk care guidelines, and styling advice.
+
+### 6. 🏢 B2B Bulk Wholesale & Cluster RFQ Portal
+- **How it works**: Dedicated business client panel (`/b2b`) allowing commercial buyers to submit Requests for Quotations (RFQs).
+- **Purpose**: Facilitates corporate gifting or bulk boutique orders directly from village weaver cooperative clusters, complete with target budget and deadline specifications.
+
+### 7. 💳 82%+ Direct Weaver Payout Tracker
+- **How it works**: Transparent database ledger tracking direct bank payouts for every single listing.
+- **Purpose**: Guarantees that at least 82% to 85% of the transaction fee is wired directly to the specific weaver’s Bank of India/SBI account, with complete payout transparency shown on the customer invoice.
+
+### 8. 🛠️ Real-time Loom Visit Bookings
+- **How it works**: Customers can schedule a physical visit to the weaver’s rural atelier.
+- **Purpose**: Instantly syncs the visit request, date, time slot, and guest count to the Weaver Dashboard calendar for real-time offline-to-online experience synchronization.
 
 ---
 
@@ -180,13 +217,6 @@ npm install
 # Launch Vite Development Server (http://localhost:5173)
 npm run dev
 ```
-
----
-
-## 🌐 Production Deployment Guide
-
-- **Frontend Deployment (Vercel / Netlify)**: Set root directory to `Frontend`, build command to `npm run build`, and output folder to `dist`. The included `Frontend/vercel.json` ensures full SPA client-side routing compatibility.
-- **Backend Deployment (Render / Railway / Cloud)**: Set root directory to `Backend`, environment variables for `MONGO_URI` and `GROK_API_KEY`, and launch command to `npm start`.
 
 ---
 
