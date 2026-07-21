@@ -9,10 +9,19 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/HardikMathur11/Adraya"><img src="https://img.shields.io/badge/🚀_Live_Prototype-Adraya_Atelier-gold?style=for-the-badge&logo=vercel" alt="Live Prototype" /></a>
   <a href="#-tech-stack-matrix"><img src="https://img.shields.io/badge/Stack-React%2018%20%7C%20Vite%205%20%7C%20Three.js-gold?style=for-the-badge" alt="Stack" /></a>
   <a href="#-system-architecture"><img src="https://img.shields.io/badge/Backend-Express%20%7C%20Node.js%20%7C%20MongoDB%20Atlas-emerald?style=for-the-badge" alt="Backend" /></a>
   <a href="#-grok-ai-engine-integration"><img src="https://img.shields.io/badge/AI-Grok%20xAI%20Engine-burgundy?style=for-the-badge" alt="AI" /></a>
 </p>
+
+---
+
+## 🔗 Live Prototype Links
+
+- **🌐 GitHub Repository**: [https://github.com/HardikMathur11/Adraya](https://github.com/HardikMathur11/Adraya)
+- **🚀 Live Storefront Prototype**: [https://adraya.vercel.app](https://adraya.vercel.app) *(Deploying on Vercel)*
+- **⚙️ Live Backend API Service**: `http://localhost:5001` / `https://adraya-api.onrender.com`
 
 ---
 
@@ -41,40 +50,37 @@ Built with a high-performance **React + Vite 5** frontend, **Three.js 3D WebGL r
 
 ## 🏗️ System Architecture
 
-The system operates on a decoupled client-server architecture with cloud database persistence and AI coprocessor integration:
+```mermaid
+flowchart TD
+    subgraph Users["👥 PLATFORM USERS"]
+        C["🏬 Connoisseur Customer"]
+        W["🛠️ Master Weaver"]
+    end
 
-```
-                                  +---------------------------------------+
-                                  |         ADRAYA PLATFORM USERS         |
-                                  +---------------------------------------+
-                                        /                           \
-                                       /                             \
-                       +------------------------------+   +------------------------------+
-                       |     Customer Storefront      |   |       Weaver Workspace       |
-                       | (Atelier, Try-On, 3D WebAR)  |   | (Analytics, Auto-Fill, Listings) |
-                       +------------------------------+   +------------------------------+
-                                       \                             /
-                                        \                           /
-                                         v                         v
-                                  +---------------------------------------+
-                                  |      React 18 + Vite 5 Frontend       |
-                                  |     (Three.js, Zustand, Tailwind)     |
-                                  +---------------------------------------+
-                                                     |
-                                            HTTPS / JSON REST API
-                                                     |
-                                                     v
-                                  +---------------------------------------+
-                                  |     Node.js + Express API Backend     |
-                                  |     (Port 5001 / CORS / JWT Auth)     |
-                                  +---------------------------------------+
-                                        /                            \
-                                       /                              \
-                                      v                                v
-                       +------------------------------+   +------------------------------+
-                       |    MongoDB Atlas Cloud DB    |   |     xAI Grok AI Service      |
-                       |  (Users, Products, Visits)   |   |   (Chatbot, Provenance Story) |
-                       +------------------------------+   +------------------------------+
+    subgraph Client["🎨 FRONTEND APPLICATION (React 18 + Vite 5)"]
+        UI["Atelier Storefront & Moods"]
+        Canvas3D["Three.js 3D Thread Spool & WebAR"]
+        Store["Zustand State & Dual-Role Session"]
+    end
+
+    subgraph Server["⚙️ BACKEND SERVICE (Node.js + Express 4)"]
+        API["REST Express Controllers"]
+        JWT["JWT Auth & Security Middleware"]
+    end
+
+    subgraph Data["🗄️ CLOUD SERVICES"]
+        Mongo[("MongoDB Atlas Cloud Database")]
+        Grok["🤖 xAI Grok AI Engine"]
+    end
+
+    C -->|Browse & Purchase| UI
+    W -->|Upload & Manage| UI
+    UI --> Canvas3D
+    UI --> Store
+    UI -->|HTTPS REST JSON API| API
+    API --> JWT
+    API -->|Mongoose ORM Queries| Mongo
+    API -->|Prompt & Auto-Fill Service| Grok
 ```
 
 ---
@@ -83,30 +89,32 @@ The system operates on a decoupled client-server architecture with cloud databas
 
 ### 1. Weaver Listing & Grok AI Automation Workflow
 
-```
-[Master Weaver] ---> (Upload Loom Photos & Specs)
-                          |
-                          v
-                 [Backend API Server]
-                          |
-                          v
-               [xAI Grok AI Service] 
-                          |
-   (Generates Title, GI Weave Story & Price Calculation)
-                          |
-                          v
-            [MongoDB Atlas Database Storage]
-                          |
-                          v
-      [Instant Real-time Broadcast to All Customers]
+```mermaid
+flowchart LR
+    A["🛠️ Master Weaver Uploads Photo"] --> B["⚙️ Express Backend API"]
+    B --> C["🤖 xAI Grok AI Engine"]
+    C -->|Auto-Generates Title, GI Weave Specs, Yarn Spec & Cultural Meaning| D["💾 MongoDB Atlas Storage"]
+    D -->|Real-Time Broadcast| E["🏬 Customer Storefront Listing"]
 ```
 
-### 2. Direct Payout & Transparent Pricing Breakdown
+### 2. Direct Payout & Order Execution Workflow
 
-For every transaction executed on Adraya:
-- **82% - 85%**: Transferred directly to the Master Weaver’s verified bank account via automated payment splits.
-- **10%**: Allocated to community raw material banks (pure mulberry silk yarn & natural dyes).
-- **5% - 8%**: Platform maintenance and GI tag verification logistics.
+```mermaid
+flowchart TD
+    A["🏬 Customer Places Order"] --> B["⚙️ Adraya Transaction Engine"]
+    B -->|82% - 85%| C["💳 Direct Weaver Bank Payout"]
+    B -->|10%| D["🧵 Community Silk & Dye Raw Material Fund"]
+    B -->|5% - 8%| E["🛡️ GI Tag Certification & Logistics"]
+```
+
+### 3. Loom Visit & Community Booking Workflow
+
+```mermaid
+flowchart LR
+    A["🏬 Customer Books Loom Visit"] --> B["⚙️ Express API Backend"]
+    B --> C["💾 MongoDB Atlas Store"]
+    C -->|Real-Time Notification| D["🛠️ Weaver Dashboard Schedule"]
+```
 
 ---
 
@@ -134,7 +142,7 @@ Adraya/
 │   ├── .env.example           # Template environment variable configuration
 │   └── package.json
 │
-├── 📜 README.md               # Enterprise system documentation
+├── 📜 README.md               # Enterprise system documentation with Mermaid diagrams
 └── 📄 .gitignore              # Environment secrets and build exclusion rules
 ```
 
@@ -154,7 +162,7 @@ cd Backend
 # Install dependencies
 npm install
 
-# Seed initial database (Populates 12 master accounts & handloom products in MongoDB Atlas)
+# Seed initial database (Populates master accounts & handloom products in MongoDB Atlas)
 npm run seed
 
 # Launch Backend Server (http://localhost:5001)
