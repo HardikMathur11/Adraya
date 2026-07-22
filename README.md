@@ -1,7 +1,7 @@
 # 👑 ADRAYA (WeaveHeritage Lux) — Indian Luxury Heritage Atelier
 
 <p align="center">
-  <img src="Frontend/public/assets/adraya-showcase/1.jpg" alt="Adraya Luxury Heritage Silk" width="100%" style="border-radius: 8px;" />
+  <img src="Frontend/public/assets/adraya-hero-screenshot.png" alt="Adraya Luxury Heritage Storefront" width="100%" style="border-radius: 8px; border: 1px solid #C9A227;" />
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 ---
 
-## 🔗 Live Production Links
+## 🔗 Production Links
 
 - **🌐 GitHub Repository**: [https://github.com/HardikMathur11/Adraya](https://github.com/HardikMathur11/Adraya)
 - **🚀 Live Backend Server (Vercel)**: [https://adraya-phc4.vercel.app/api/health](https://adraya-phc4.vercel.app/api/health)
@@ -27,7 +27,7 @@
 
 ## 🌟 Executive Summary & Vision
 
-**Adraya** (built as the realization of the **WeaveHeritage Lux** blueprint) is a heritage-luxury digital marketplace designed to position Indian handloom as a high-value cultural luxury. Rather than treating handloom as general commodity e-commerce, the platform shifts the narrative: **the story of the maker, the scarcity of the weave, and the time invested become the primary value signals.**
+**Adraya** is an end-to-end direct-from-loom luxury handloom platform designed to preserve and scale India’s living textile heritage. By directly connecting rural master weavers (*Shilp Guru and National Award recipients*) with global textile connoisseurs and commercial luxury buyers, Adraya eliminates exploitative middleman networks, ensuring **82%+ direct bank payouts** to weaving families.
 
 Adraya offers a dual-pathway ecosystem:
 1. **Luxury Retail**: For premium individual connoisseurs seeking rare, authentic, certified drapes.
@@ -42,49 +42,45 @@ Adraya offers a dual-pathway ecosystem:
 - **Exclusivity Deficit**: High-net-worth individual (HNWI) buyers are willing to pay premium prices but lack access to verified origin records, artisan lineage stories, and guaranteed handloom authenticity.
 - **Traceability Gap**: Designers and boutique owners face supply chain uncertainty, quality fluctuations, and counterfeit products when purchasing bulk handlooms.
 
-###  The Solution
+### ✔️ The Solution
 - **Atelier Direct-to-Consumer Model**: Direct selling channels with verified **82%+ direct-to-weaver bank payouts** visible on the digital invoice.
 - **Multilingual Low-Bandwidth Onboarding**: Master weavers easily register using vocal guidance, upload products, and manage their listings.
 - **Traceability Passports**: QR-linked interactive digital passports containing loom hours, yarn counts, and Geographical Indication (GI) registry certifications.
 
 ---
 
-##  Core Hackathon Features Built & Operational
+## 💎 Platform Features
 
-### 1. Curated Premium Storefront
-- **Description**: High-end editorial design language, using a curated dark-cherry gold accent palette (`#3F0F17` & `#C9A227`) inspired by imperial court textiles.
-- **Technical Highlight**: Integrated with **Three.js WebGL (via React Three Fiber)**, featuring a floating 3D Gold Thread Spool interactive canvas right over the homepage hero.
+### 1. 🧵 Interactive 3D Gold Thread Spool
+- **Description**: Embedded in the homepage hero header using WebGL via `@react-three/fiber` and `@react-three/drei`.
+- **Purpose**: A floating, interactive 3D pure gold thread ring reacts to user mouse drags and spins organically over a live video broadcast stream of rural artisan weavers operating pit looms.
+- **Aesthetic**: Blends modern 3D technology with ancient craft, establishing an immediate luxury digital atmosphere.
 
-### 2. Traceability & Provenance Passports
-- **Description**: Every product contains a unique QR-based digital passport listing the GI tag registry number, material specs (e.g. *300D Mulberry Silk*), days of labor, and the specific village origin.
-- **Technical Highlight**: Interactive unfold passport visualization page displaying the authentic physical lineage of the craft.
+### 2. 🔍 High-Resolution 4-Photo Drape Inspector
+- **Description**: Features a specialized photo carousel grid on the product details page showing close-ups of the pure zari borders, heavy thread density, macro silk fibers, and full saree length.
+- **Purpose**: Mimics the physical touch and feel of luxury textiles, giving buyers the confidence to inspect hand-spun organic mulberry silks from their screens.
 
-### 3. Heritage Storytelling Engine
-- **Description**: Rather than typical technical specs, product pages read like curated narratives detailing the cultural significance of the motifs (e.g., *Double-Peacock motif representing grace and royal protection*).
+### 3. 👚 AI Virtual Try-On
+- **Description**: Accessible via the **"AI Try-on Saree"** button on the product details page.
+- **Purpose**: Connoisseurs can upload personal portraits, and the platform’s layout simulates a realistic visualization of the handloom drape wrapped around them.
 
-### 4. Emotion-Based Shopping (Atelier Moods)
-- **Description**: Replaced generic product filters with a curated mood discoverer.
-- **Occasions**: Connoisseurs shop by curated heritage moods: **Wedding Aura, Royal Splendor, Heirloom Gift, Quiet Luxury, Sustainable Luxe, and Temple Heritage**.
+### 4. 🕶️ 3D WebAR Loom Room Placement
+- **Description**: Built using AR Quick Look (iOS) and Model Viewer (Android).
+- **Purpose**: Clicking **"View Loom in 3D AR"** projects a life-sized, high-fidelity 3D virtual pit loom weaving machine directly onto the user's living room floor using mobile camera augmented reality.
 
-### 5. B2B Bulk Collaboration Portal
-- **Description**: Dedicated wholesale request system enabling export houses and designers to submit Requests for Quotations (RFQs) for cluster-level bulk orders.
-- **Technical Highlight**: Leverages collaborative weaver splitting logic to fulfill large orders without sacrificing artisan quality.
+### 5. 🤖 24/7 Grok AI Heritage Guide
+- **Description**: Floating AI Chatbot widget present across all pages connected to xAI's `grok-beta` engine.
+- **Purpose**: Automatically educates global buyers on the Geographical Indication (GI) origin, the historical motifs of the drape, silk care guidelines, and styling advice.
 
-### 6. Sonification of Silk (Sensory Experience)
-- **Description**: Integrated real audio signature waveforms of the handloom loom shuttle sounds recorded live at rural weaver cottages.
-- **Technical Highlight**: Waveform player brings the loom to life right as the customer inspects the texture of the drape.
+### 6. 🏢 B2B Bulk Wholesale & Cluster RFQ Portal
+- **Description**: Dedicated business client panel (`/b2b`) allowing commercial buyers to submit Requests for Quotations (RFQs).
+- **Purpose**: Facilitates corporate gifting or bulk boutique orders directly from village weaver cooperative clusters, complete with target budget and deadline specifications.
 
-### 7. AI Brand Assistant (xAI Grok Integration)
-- **Description**: Connected to the Grok API to auto-generate product stories, calculate luxury fair-trade pricing based on raw materials/labor hours, and generate social captions.
-- **Technical Highlight**: Weaver auto-fill listing engine uses Grok to generate complete listings with 1 click.
+### 7. 💳 82%+ Direct Weaver Payout Tracker
+- **Description**: Transparent database ledger tracking direct bank payouts for every single listing.
+- **Purpose**: Guarantees that at least 82% to 85% of the transaction fee is wired directly to the specific weaver’s Bank of India/SBI account, with complete payout transparency shown on the customer invoice.
 
-### 8. Weaver Education & Empowerment Hub
-- **Description**: Structured training portal for rural artisans covering export compliance, luxury product packaging, photography guidelines, and fair-wage calculation metrics.
-
-### 9. Sizing & Fit Guidance
-- **Description**: Integrated universal size charts and draping guides to eliminate returns and boost buyer confidence.
-
-### 10. Loom Visit & Experiential Travel Booking
+### 8. 🛠️ Real-time Loom Visit Bookings
 - **Description**: Experiential tourism module allowing premium buyers to book physical weaving workshops, local village heritage tours, and live loom studio slots.
 
 ---
@@ -173,23 +169,6 @@ flowchart LR
     B --> C["💾 MongoDB Atlas Store"]
     C -->|Real-Time Notification| D["🛠️ Weaver Dashboard Schedule"]
 ```
-
----
-
-## 👥 Pre-Configured Test Accounts (MongoDB Atlas)
-
-The database includes **12 pre-configured accounts** for testing:
-
-| Role | Email | Password | Craft Specialty / Location |
-| :--- | :--- | :--- | :--- | :--- |
-| **Master Weaver** | `radha@adraya.in` | `AdrayaPass123` | Double-Ikat Silk (Pochampally, Telangana) |
-| **Master Weaver** | `lakshmi@adraya.in` | `AdrayaPass123` | Korvai Temple Borders (Kanchipuram, TN) |
-| **Master Weaver** | `bipul@adraya.in` | `AdrayaPass123` | Wild Golden Muga Silk (Sualkuchi, Assam) |
-| **Master Weaver** | `ghulam@adraya.in` | `AdrayaPass123` | Kani Needle Pashmina (Srinagar, Kashmir) |
-| **Master Weaver** | `gurudev@adraya.in` | `AdrayaPass123` | Real Gold Zari Kadwa (Varanasi, UP) |
-| **Master Weaver** | `savita@adraya.in` | `AdrayaPass123` | Yeola Paithani Peacock (Maharashtra) |
-| **Customer** | `ananya@gmail.com` | `AdrayaPass123` | Connoisseur Collector |
-| **Customer** | `priya@boutiquesilk.com` | `AdrayaPass123` | Luxury Boutique Buyer |
 
 ---
 
