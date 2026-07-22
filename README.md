@@ -1,4 +1,4 @@
-# ✦ ADRAYA — Indian Luxury Heritage Atelier
+# 👑 ADRAYA — Indian Luxury Heritage Atelier
 
 <p align="center">
   <img src="Frontend/public/assets/adraya-hero-screenshot.png" alt="Adraya Storefront" width="100%" style="border-radius: 8px; border: 1px solid #C9A227;" />
