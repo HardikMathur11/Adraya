@@ -25,27 +25,40 @@
 
 ---
 
-## 🌟 Executive Summary & Vision
+## ❌ The Problem Statement
 
-**Adraya** is an end-to-end direct-from-loom luxury handloom platform designed to preserve and scale India’s living textile heritage. By directly connecting rural master weavers (*Shilp Guru and National Award recipients*) with global textile connoisseurs and commercial luxury buyers, Adraya eliminates exploitative middleman networks, ensuring **82%+ direct bank payouts** to weaving families.
+Traditional handloom weaving represents one of the most culturally significant craft sectors in India, yet it faces deep structural inefficiencies that threaten both the survival of the art and the livelihoods of rural artisans:
 
-Adraya offers a dual-pathway ecosystem:
-1. **Luxury Retail**: For premium individual connoisseurs seeking rare, authentic, certified drapes.
-2. **B2B Heritage Sourcing**: For design houses, boutiques, and exporters looking to secure authentic, cluster-level orders directly from rural artisans.
+1. **The Middleman Monopolization & Margin Loss**: 
+   Rural weavers typically operate through complex, multi-tiered networks of local traders, master weavers, and wholesale agents. These middlemen capture up to **80% to 85% of the retail price** of luxury handloom drapes. As a result, the actual artisan is left financially vulnerable, earning below-minimum wages for months of high-skill pit loom labor.
+   
+2. **The Connection & Visibility Gap**: 
+   Highly talented, lineage-based master weavers located in remote villages (such as Pochampally, Kanchipuram, or Yeola) have **no direct connection channel to global premium consumers, design houses, and boutique buyers**. HNWIs (High-Net-Worth Individuals) and export houses are willing to pay premium luxury rates for authentic handlooms, but they remain completely isolated from the actual weavers who possess these multi-generational skills.
+
+3. **Authenticity & Provenance Deficit**: 
+   The luxury market operates on trust. However, premium buyers face a market saturated with cheap, powerloom-made counterfeits falsely marketed as handmade silk sarees. Without verified certificates of origin, tracing Geographical Indication (GI) tags, or knowing how many loom hours were invested, premium buyers are hesitant to make high-value purchases online.
+
+4. **Digital & Language Exclusions**: 
+   Rural weaving clusters are often excluded from modern e-commerce due to complex setup flows, language barriers, and the need for professional digital branding, preventing them from presenting their masterpieces on a global stage.
 
 ---
 
-## ⚡ The Problem vs. The Solution
+## ✔️ The Solution: Adraya (WeaveHeritage Lux)
 
-### ❌ The Problem
-- **Middleman Exploitation**: Rural weavers operate through complex distributor networks, capturing under 15% of the end consumer retail price and leaving them financially vulnerable.
-- **Exclusivity Deficit**: High-net-worth individual (HNWI) buyers are willing to pay premium prices but lack access to verified origin records, artisan lineage stories, and guaranteed handloom authenticity.
-- **Traceability Gap**: Designers and boutique owners face supply chain uncertainty, quality fluctuations, and counterfeit products when purchasing bulk handlooms.
+Adraya is an end-to-end luxury-focused digital atelier that transforms the handloom ecosystem. It treats every handloom masterpiece like a curated heritage object, where the story of the artisan, the scarcity of the weave, and the time invested become the key value drivers:
 
-### ✔️ The Solution
-- **Atelier Direct-to-Consumer Model**: Direct selling channels with verified **82%+ direct-to-weaver bank payouts** visible on the digital invoice.
-- **Multilingual Low-Bandwidth Onboarding**: Master weavers easily register using vocal guidance, upload products, and manage their listings.
-- **Traceability Passports**: QR-linked interactive digital passports containing loom hours, yarn counts, and Geographical Indication (GI) registry certifications.
+### 1. Direct-to-Consumer (D2C) Atelier Network
+By bridging the gap between rural master weavers and global buyers, Adraya bypasses middlemen entirely. Every transaction guarantees **82%+ direct bank payouts** wired directly to the weaver's account, bringing financial independence and pride to handloom communities.
+
+### 2. Verified Traceability & QR Passports
+Each product is issued a QR-based **Digital Heritage Passport**. Scanning the passport reveals the weaver’s profile, village, craft cluster lineage, verified yarn counts, days of labor, and official Ministry of Textiles GI-tagged origin certificates.
+
+### 3. Dual-Pathway Market Access
+- **Luxury Retail**: An editorial, museum-grade gallery where premium buyers browse rare silks by mood, occasion, and technique.
+- **B2B Sourcing Portal**: Enables designers, boutiques, and exporters to request custom orders in bulk from entire cooperative weaving clusters, ensuring dependable volumes without sacrificing artisan quality.
+
+### 4. AI-Driven Artisan Empowerment
+Master weavers can register and upload products in a simple, multilingual environment. Our integrated **Grok AI Brand Assistant** automatically translates listings and generates professional provenance narratives, allowing weavers to market themselves as premium luxury labels with 1 click.
 
 ---
 
